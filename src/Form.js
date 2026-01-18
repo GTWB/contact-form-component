@@ -10,7 +10,7 @@ export default function Form() {
     supportRequest: "",
     generalEnquiry: "",
     checkbox: false,
-    sumbitSuccess: false,
+    /* sumbitSuccess: false, */
   });
   const [successState, setSuccessState] = useState(false);
   const [submittedData, setSubmittedData] = useState({});
@@ -61,7 +61,7 @@ export default function Form() {
     if (validate()) {
       setSuccessState(true);
       setSubmittedData({ ...values });
-      console.log(submittedData);
+
       setValues({
         firstName: "",
         lastName: "",
@@ -70,7 +70,7 @@ export default function Form() {
         supportRequest: "",
         generalEnquiry: "",
         checkbox: false,
-        sumbitSuccess: false,
+        /* sumbitSuccess: false, */
       });
     }
   }
@@ -133,12 +133,12 @@ export default function Form() {
 
       {/* EMAIL ADDRESS */}
       <label htmlFor="email">
-        Email Address * <br></br>{" "}
+        Email Address * <br></br>
         <input
           autoComplete="on"
           className={error.email ? "error-state" : ""}
           id="email"
-          type="email"
+          /*  type="email" */
           name="email"
           value={values.email}
           onChange={(e) => {
