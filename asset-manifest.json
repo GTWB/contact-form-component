@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/contact-form-component/static/css/main.f8bc1346.css",
-    "main.js": "/contact-form-component/static/js/main.e29f4dc2.js",
+    "main.js": "/contact-form-component/static/js/main.712abb07.js",
     "index.html": "/contact-form-component/index.html",
     "static/media/icon-success-check.svg": "/contact-form-component/static/media/icon-success-check.b4e857b980bb531b1fe0b5030a0e14c0.svg",
     "main.f8bc1346.css.map": "/contact-form-component/static/css/main.f8bc1346.css.map",
-    "main.e29f4dc2.js.map": "/contact-form-component/static/js/main.e29f4dc2.js.map"
+    "main.712abb07.js.map": "/contact-form-component/static/js/main.712abb07.js.map"
   },
   "entrypoints": [
     "static/css/main.f8bc1346.css",
-    "static/js/main.e29f4dc2.js"
+    "static/js/main.712abb07.js"
   ]
 }
