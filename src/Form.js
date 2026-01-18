@@ -102,6 +102,7 @@ export default function Form() {
         First Name * <br></br>
         <input
           autoComplete="on"
+          className={error.firstName ? "error-state" : ""}
           id="first-name"
           type="text"
           value={values.firstName}
@@ -118,6 +119,7 @@ export default function Form() {
         Last name * <br></br>
         <input
           id="last-name"
+          className={error.lastName ? "error-state" : ""}
           type="text "
           name="last-name"
           value={values.lastName}
@@ -134,6 +136,7 @@ export default function Form() {
         Email Address * <br></br>{" "}
         <input
           autoComplete="on"
+          className={error.email ? "error-state" : ""}
           id="email"
           type="email"
           name="email"
@@ -200,6 +203,7 @@ export default function Form() {
         Message * <br></br>{" "}
         <textarea
           id="message"
+          className={error.message ? "error-state" : ""}
           type="text"
           value={values.message}
           onChange={(e) => {
