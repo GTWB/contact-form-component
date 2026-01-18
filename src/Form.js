@@ -1,5 +1,5 @@
 import { useState } from "react";
-import SuccesMessage from "./SuccesMessage.js";
+import SuccessMessage from "./SuccessMessage.js";
 
 export default function Form() {
   const [values, setValues] = useState({
@@ -87,7 +87,7 @@ export default function Form() {
 
   if (successState)
     return (
-      <SuccesMessage
+      <SuccessMessage
         submittedData={submittedData}
         onSuccessState={setSuccessState}
       />
@@ -120,7 +120,7 @@ export default function Form() {
         <input
           id="last-name"
           className={error.lastName ? "error-state" : ""}
-          type="text "
+          type="text"
           name="last-name"
           value={values.lastName}
           onChange={(e) => {
@@ -204,7 +204,6 @@ export default function Form() {
         <textarea
           id="message"
           className={error.message ? "error-state" : ""}
-          type="text"
           value={values.message}
           onChange={(e) => {
             handleChange(e, setValues, "message");
@@ -220,7 +219,7 @@ export default function Form() {
           id="checkbox"
           checked={values.checkbox}
           type="checkbox"
-          value={values.checkbox}
+          /* value={values.checkbox} */
           onChange={() => {
             setValues({ ...values, checkbox: !values.checkbox });
             handleChangeError(setError, error, "checkbox", "");
@@ -230,10 +229,10 @@ export default function Form() {
           I consent to being contacted by the team*
         </label>
       </fieldset>
-      <p className="error-state">{values.checkbox || error.checkbox}</p>
+      {error.checkbox && <p className="error-state">{error.checkbox}</p>}
 
       {/* SUBMIT FORM BUTTON */}
-      <button onClick={submitForm} name="submit">
+      <button type="submit" name="submit">
         Submit
       </button>
     </form>

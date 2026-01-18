@@ -1,6 +1,6 @@
 import iconSuccessCheck from "./images/icon-success-check.svg";
 
-export default function SuccesMessage({ submittedData, onSuccessState }) {
+export default function SuccessMessage({ submittedData, onSuccessState }) {
   function returnToForm() {
     onSuccessState(false);
   }
